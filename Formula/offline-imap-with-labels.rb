@@ -1,10 +1,10 @@
-# -*- coding: undecided -*-
+# -*- coding: utf-8 -*-
 require 'formula'
 
 class OfflineImapWithLabels < Formula
   homepage 'http://offlineimap.org/'
 
-  head 'https://github.com/aroig/offlineimap.git'
+  head 'https://github.com/aroig/offlineimap.git', :branch => gmail_labels
 
   def install
     prefix.install 'offlineimap.conf', 'offlineimap.conf.minimal'
