@@ -6,6 +6,7 @@ class OfflineImapWithLabels < Formula
 
   head 'https://github.com/aroig/offlineimap.git'
   url 'https://github.com/aroig/offlineimap.git', :using => :git, :branch => 'gmail_labels'
+  version '6.5.5'
 
   def install
     prefix.install 'offlineimap.conf', 'offlineimap.conf.minimal'
