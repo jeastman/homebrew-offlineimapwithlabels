@@ -4,7 +4,8 @@ require 'formula'
 class OfflineImapWithLabels < Formula
   homepage 'http://offlineimap.org/'
 
-  head 'https://github.com/aroig/offlineimap.git', :branch => gmail_labels
+  head 'https://github.com/aroig/offlineimap.git'
+  url 'https://github.com/aroig/offlineimap.git', :using => :git, :branch => 'gmail_labels'
 
   def install
     prefix.install 'offlineimap.conf', 'offlineimap.conf.minimal'
